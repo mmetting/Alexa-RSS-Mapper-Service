@@ -6,7 +6,7 @@ This service is based on RHMAP's API Mapper, which is a visual tool for transfor
 * Transform Fields using built-in transformations, or custom transforms they have defined themselves
 
 ## Usage in the RSS Reader Demo
-For our demo, we are using the RSS Mapper Service to streamline the response from the [Connector Service](https://github.com/mmetting/RSS-Reader-Demo-RSS-Connector). In order to enabling a web service being usable within an Alexa Flash Briefing Skill, the service's interface needs to adhere to [Flash Briefing Skill API](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/flash-briefing-skill-api-feed-reference).
+For our demo, we are using the RSS Mapper Service to streamline the response from the [Connector Service](https://github.com/mmetting/RSS-Reader-Demo-RSS-Connector). In order to enabling a web service being usable within an Alexa Flash Briefing Skill, the service's interface needs to adhere to the [Flash Briefing Skill API](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/flash-briefing-skill-api-feed-reference).
 
 > In order to use the Mapping Service, the [Connector Service](https://github.com/mmetting/RSS-Reader-Demo-RSS-Connector) would need to be deployed and reachable from the internet. To check your Connector Service, try to reach it via a browser: ![alt text](./pictures/get_url.png "Get the URL") ![alt text](./pictures/append_feeds.png "Result")
 
@@ -185,9 +185,9 @@ exports.transform = function (content) {
 };
 ```
 
-![alt text](./pictures/transformations.png "contentToImageTransformation.js")
+![alt text](./pictures/transformations.png "alexaRemoveReadMore.js")
 
-- Open the [`application.js`](./application.js) file and add the `contentToImageTransformation` transformation:
+- Open the [`application.js`](./application.js) file and add the transformations to the Node.js application:
 
 ```
 ...
